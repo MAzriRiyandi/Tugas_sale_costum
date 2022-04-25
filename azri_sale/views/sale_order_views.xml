@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="azri_sale_order_form_view_inherit" model="ir.ui.view">
+        <field name="name">sale.order.from.inherited</field>
+        <field name="model">sale.order</field>
+        <field name="inherit_id" ref="sale.view_order_form"/>      
+        <field name="arch" type="xml">
+            <xpath expr="//button[@name='action_confirm']" position="before">
+                
+                <button name="create_mo" id="create_mo" string="Create MO" type="object" class="btn_primary"/>
+                
+            </xpath>
+        </field>
+    </record>
+</odoo>
